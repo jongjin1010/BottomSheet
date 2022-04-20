@@ -9,28 +9,19 @@
             type="com.jjoh.bottomsheet.MainActivity" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
         <FrameLayout
+            android:id="@+id/sheet"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="700dp"
             android:background="@drawable/rounded"
-            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-            <ImageView
-                android:id="@+id/sheet"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|top"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_baseline_remove_24" />
         </FrameLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
